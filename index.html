@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>André Jr. Mobile Designer & Developer</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom Design -->
+  <link href="style.css" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400;1,500&display=swap" rel="stylesheet">
+
+
+  <style>
+  .var-highlight{
+    color: #FFF;
+  }
+  .string-highlight{
+    color: #FFF;
+  }
+  
+  #typewriter{
+      font-size: 2.5em;
+      margin: 0;
+      font-family: "Courier New";
+      color:#FFF;
+  
+      &:after{
+        content: "|";
+        animation: blink 500ms linear infinite alternate;
+      }
+  }
+  
+  @-webkit-keyframes blink{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+  }
+  
+  @-moz-keyframes blink{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+  }
+  
+  @keyframes blink{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+  }</style>
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="img/logo.png" class="logo"/>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#" id="hover-home">Home
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" id="hover-about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" id="hover-portfolio">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" id="hover-home">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" id="hover-ptbr">PT-BR</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Content -->
+  <section id="header">
+
+  <div class="container d-flex flex-row align-items-center">
+    <div class="row">
+      <div class="col-lg-12 text-left d-flex flex-column align-items-center">
+        <pre id="typewriter"><span class="var-highlight">if(</span><span style="color: #64ffc3;">you</span><span style="color: #ff94d1;">.hasIdea</span> = <span style="color: #ffb444;">true</span>)
+<span class="var-highlight">return</span> <span style="color: #7ee5ff;">realizeDream</span><span  class="var-highlight">();</span></pre>
+      </div>
+    </div>
+  </div>
+  </section>
+
+  <section id="portfolio">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 mb-4">
+          <h1>Portfolio</h1>
+        </div>
+        <div class="col-lg-6">
+          <a href="#">
+            <div class="portfolio-container" id="swappin">
+              <img src="img/logos/swappin.png"/>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-6">
+          <a href="#">
+            <div class="portfolio-container" id="instaclone">
+              <img src="img/logos/instaclone.png"/>
+            </div>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+<section id="contact">
+  <div class="container">
+    <div class="row">
+
+
+      <div class="col-lg-12 mb-4">
+        <h1>Contact</h1>
+      </div>
+    
+      <div class="col-lg-12 mb-4">
+        <form action="/action_page.php">
+          <input type="text" id="fname" name="name" placeholder="Full Name"><br>
+          <input type="text" id="lname" name="email" placeholder="E-mail Adress" class="email-input">
+          <input type="text" id="fname" name="name" placeholder="Phone Number" class="phone-input"><br>
+          <input type="text" id="fname" name="name" placeholder="Location"><br>
+          <input type="text" id="lname" name="email" placeholder="Subject"><br><br>
+          <input type="submit" value="Submit" class="submit-button">
+        </form> 
+      </div>
+    
+    </div>
+  </div>
+</section>
+<footer>
+  <div class="container mb-5">
+    <div class="row">
+      <div class="col-lg-12 h-25 d-inline-block">
+        <p>var <span style="color: #64ffc3;">author</span> = <span style="color: #7ee5ff;">"André Luiz Jr."</span>;<br>
+        
+          <p>var <span style="color: #64ffc3;">linkedIn</span> = 
+            <a href="https://www.linkedin.com/in/andr%C3%A9-leite-j%C3%BAnior-034138100/" style="color: #7ee5ff;">"linkedin.com/andre-jr"</a>;<br>
+        
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+  <!-- Rtpewriter -->
+  <script>
+  function setupTypewriter(t) {
+    var HTML = t.innerHTML;
+
+    t.innerHTML = "";
+
+    var cursorPosition = 0,
+        tag = "",
+        writingTag = false,
+        tagOpen = false,
+        typeSpeed = 100,
+      tempTypeSpeed = 0;
+
+    var type = function() {
+      
+        if (writingTag === true) {
+            tag += HTML[cursorPosition];
+        }
+
+        if (HTML[cursorPosition] === "<") {
+            tempTypeSpeed = 0;
+            if (tagOpen) {
+                tagOpen = false;
+                writingTag = true;
+            } else {
+                tag = "";
+                tagOpen = true;
+                writingTag = true;
+                tag += HTML[cursorPosition];
+            }
+        }
+        if (!writingTag && tagOpen) {
+            tag.innerHTML += HTML[cursorPosition];
+        }
+        if (!writingTag && !tagOpen) {
+            if (HTML[cursorPosition] === " ") {
+                tempTypeSpeed = 0;
+            }
+            else {
+                tempTypeSpeed = (Math.random() * typeSpeed) + 50;
+            }
+            t.innerHTML += HTML[cursorPosition];
+        }
+        if (writingTag === true && HTML[cursorPosition] === ">") {
+            tempTypeSpeed = (Math.random() * typeSpeed) + 50;
+            writingTag = false;
+            if (tagOpen) {
+                var newSpan = document.createElement("span");
+                t.appendChild(newSpan);
+                newSpan.innerHTML = tag;
+                tag = newSpan.firstChild;
+            }
+        }
+
+        cursorPosition += 1;
+        if (cursorPosition < HTML.length - 1) {
+            setTimeout(type, tempTypeSpeed);
+        }
+
+    };
+
+    return {
+        type: type
+    };
+}
+
+var typer = document.getElementById('typewriter');
+
+typewriter = setupTypewriter(typewriter);
+
+typewriter.type();
+
+
+  </script>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.slim.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
